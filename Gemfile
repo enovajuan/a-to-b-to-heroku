@@ -13,6 +13,9 @@ gem 'datamapper', require: 'data_mapper'
 gem 'bundler'
 
 
+group :production do
+  gem 'dm-postgres-adapter'
+end
 
 
 group :test do
