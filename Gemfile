@@ -11,6 +11,7 @@ gem 'sinatra-contrib'
 gem 'sinatra-partial', require: 'sinatra/partial'
 gem 'datamapper', require: 'data_mapper'
 gem 'bundler'
+gem 'tux'
 
 
 group :production do
@@ -32,7 +33,6 @@ end
 
 group :test, :development do
   gem 'dm-sqlite-adapter'
-  gem 'tux'
   gem 'debase'
   gem 'sass'
   gem 'compass'
