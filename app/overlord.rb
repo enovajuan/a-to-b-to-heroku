@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
-Bundler.require(:default, :test, :development)
+Bundler.require(:default)
 require File.expand_path(File.dirname(__FILE__) + '/overlord_helpers.rb')
 # require 'sinatra'
 # require 'sinatra/json'
