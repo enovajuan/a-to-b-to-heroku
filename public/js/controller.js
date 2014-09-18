@@ -105,11 +105,11 @@ bombApp.directive('bombtime', function () {
                         break;
                     case "ACTIVATE":
 
-                        if($scope.bombReady && !$scope.bombActive)
+                        if($scope.bombReady && !$scope.bombActive && !$scope.bombExploded)
                         {
                             $scope.activate();
                         }
-                        if($scope.bombReady && $scope.bombActive)
+                        if($scope.bombReady && $scope.bombActive && !$scope.bombExploded)
                         {
                             $scope.deactivate();
                         }
@@ -192,9 +192,9 @@ bombApp.directive('bombtime', function () {
                     settings.colour = tinycolor("pink").toHsv();
 
                 }
-
+                if($scope.bombExploded){
                 Bomb.deactivate({id: $scope.bomb_id, deactivation_code: $scope.deactivation_entry}, success, failure)
-
+                }
 
 
             };
@@ -253,8 +253,10 @@ bombApp.directive('bombtime', function () {
                     settings.colour = tinycolor("orange").toHsv();
 
                 }
-
-                Bomb.cut({id: $scope.bomb_id, wire_id:wire_id}, success, failure)
+                if(!$scope.bombExploded)
+                {
+                    Bomb.cut({id: $scope.bomb_id, wire_id:wire_id}, success, failure)
+                }
 
 
 
@@ -280,9 +282,9 @@ bombApp.directive('bombtime', function () {
                     settings.colour = tinycolor("red").toHsv();
 
                 }
-
-                Bomb.activate({id: $scope.bomb_id, activation_code: $scope.activation_code}, success, failure)
-
+                if(!$scope.bombExploded) {
+                    Bomb.activate({id: $scope.bomb_id, activation_code: $scope.activation_code}, success, failure)
+                }
 
 
             };
@@ -318,7 +320,10 @@ bombApp.directive('bombtime', function () {
                 var data = {activation_code: form.activation_code.$modelValue,
                         deactivation_code: form.deactivation_code.$modelValue,
                         detonation_time: form.detonation_time.$modelValue};
-                Bomb.submit(data, success, failure)
+                if(!$scope.bombExploded)
+                {
+                    Bomb.submit(data, success, failure)
+                }
 
 
             };
