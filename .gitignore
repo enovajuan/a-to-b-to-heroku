@@ -40,6 +40,7 @@ build/
 .idea/workspace.xml
 .idea/watcherTasks.xml
 .idea/dbnavigator.xml
+.idea/dictionaries/*
 .idea/tasks.xml
 **/*.iml
 **/*.ids
