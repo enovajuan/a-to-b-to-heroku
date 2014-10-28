@@ -12,6 +12,8 @@ gem 'sinatra-partial', require: 'sinatra/partial'
 gem 'datamapper', require: 'data_mapper'
 gem 'bundler'
 gem 'tux'
+gem 'sass'
+gem 'compass'
 
 group :production do
   gem 'dm-postgres-adapter'
@@ -33,7 +35,5 @@ end
 group :test, :development do
   gem 'dm-sqlite-adapter'
   gem 'debase'
-  gem 'sass'
-  gem 'compass'
   gem 'ruby-debug-ide'
 end

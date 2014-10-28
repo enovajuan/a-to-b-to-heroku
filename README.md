@@ -1,3 +1,33 @@
+## Reveal.js Slides
+[Slides @ Github](https://github.com/enovajuan/reveal.js/tree/meetup_js_10_28_2014)
+Made with [Reveal.js](https://github.com/hakimel/reveal.js)
+
+### Libraries/Services Utilized
+[AngularJS](https://angularjs.org/)
+[Bootstrap 3](http://getbootstrap.com/)
+[Bower](http://bower.io/)
+[NPM](https://www.npmjs.org/)
+[GruntJS](http://gruntjs.com/)
+[JQuery](http://jquery.com/)
+[Sketch.js](http://intridea.github.io/sketch.js/)
+[DatGUI](https://code.google.com/p/dat-gui/)
+[SprintF](https://github.com/alexei/sprintf.js)
+[Sinatra - for backend API](http://www.sinatrarb.com/)
+[Angular - Timer](https://github.com/enovajuan/angular-timer.git#master)
+[tinycolor.js](https://raw.githubusercontent.com/bgrins/TinyColor/master/tinycolor.js) 
+[NG-Keypad](http://dev.tommyrochette.com/ng-keypad/demo/)
+[Heroku](https://www.heroku.com/)
+
+#### Notes: Rube Goldberg machine ahead
+By the time you read this, hopefully I've gone ahead and cleaned up the code...
+If not then you will find alot of code here that I would NOT reccommend using in ANY app
+Unless you plan on fixing the security gaps / terrible practices and choose to DRY up the code
+As well as fix any anti-patters I've used here
+
+## THIS IS PROVIDED AS IS AND NO GUARANTEES THAT IT WON'T Break SOMETHING or OTHER
+
+
+
 ## Super Villain's Detonation Device
 
 You've been contacted by a super villain in search of help. He says he has a great idea, and needs only your genius to bring it to completion. Turns out the idea is going to be a bomb. I mean, literally. It's a bomb. Still, he's offering equity.
