@@ -37,4 +37,12 @@ build/
 
 # bower files
 /bower_components/
-.idea/
+.idea/workspace.xml
+.idea/watcherTasks.xml
+.idea/dbnavigator.xml
+.idea/tasks.xml
+**/*.iml
+**/*.ids
+.idea/datasources.xml
+
+
