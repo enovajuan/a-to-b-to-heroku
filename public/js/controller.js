@@ -305,7 +305,7 @@ bombApp.directive('bombtime', function () {
             };
 
             $scope.cancel = function () {
-                $location.path("/" + $scope.activation.code);
+                $location.path  ("/" + $scope.activation.code);
             };
 
             $scope.errorClass = function (ngModelController) {
